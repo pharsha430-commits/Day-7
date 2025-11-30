@@ -1,0 +1,96 @@
+package learning;
+
+public class Student_Abstraction {
+	
+	static String schoolName  =  "ABC Public School";  //static variable
+	
+	static void showSchoolName() {			//static method
+		
+		System.out.print("School Name  : "  +schoolName);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Accessing static variable directly:");
+		System.out.println(Student_Abstraction.schoolName);
+		
+		System.out.println("\nAccessing static method:");
+		Student_Abstraction.showSchoolName();
+	}
+
+}
+
+
+package learning;
+
+abstract class four_wheeler {
+	
+	abstract void start () ; 
+	
+	void fuelType ()  {
+		
+		System.out.println("Fuel can be petrol or diesel");
+	}
+}
+
+class Bike extends four_wheeler  {
+	
+	void start () {
+		System.out.println("Car can starts with key or button");
+	}
+	
+}
+public class Vehicle_Abstraction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Bike b = new Bike ();
+		
+		b.start ();
+		b.fuelType();
+	}
+
+}
+
+
+Multiple Inheritance -
+Multiple inheritance is an object oriented concept where a class can inherit from more than one parent class.  While powerful, it can cause ambiguity when multiple parents have the same methods.  
+If two of the parent classes have a method with the same signature, the compiler cannot determine which one to execute.
+This ambiguity is the reason java does not support multiple inheritence with classes.
+
+
+package learning;
+
+interface A {
+	void displayA();
+}
+
+interface B {
+	void displayB ();
+}
+class C implements A,B {
+	public void displayA () {
+		System.out.println("This is from Interface A");
+	}
+	public void displayB()  {
+		System.out.println("This is from Interface B");
+	}
+}
+	public class Test  {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		C obj = new C();
+		obj.displayA();
+		obj.displayB();
+
+		
+	}
+
+}
+
+
+s
