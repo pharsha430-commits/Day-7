@@ -2,8 +2,7 @@ package learning;
 
 public class Student_Abstraction {
 	
-	static String schoolName  =  "ABC Public School";  //static variable
-	
+	static String schoolName  =  "ABC Public School";  //static variable	
 	static void showSchoolName() {			//static method
 		
 		System.out.print("School Name  : "  +schoolName);
