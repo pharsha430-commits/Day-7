@@ -2,25 +2,34 @@ package learning;
 
 public class Student_Abstraction {
 	
-	static String schoolName  =  "ABC Public School";  //static variable	
-	static void showSchoolName() {			//static method
+	//static variable
+	static String schoolName  =  "ABC Public School"; 
+	
+	//static method
+	static void showSchoolName() {			
 		
+		//print the school name
 		System.out.print("School Name  : "  +schoolName);
 	}
 	
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		//print a message to indicate static variable access
 		System.out.println("Accessing static variable directly:");
+		
+		//accessing static variable using class name
+		//no object is created
 		System.out.println(Student_Abstraction.schoolName);
 		
+		//print a message before calling the static method 
 		System.out.println("\nAccessing static method:");
+		
+		//calling static method using class name
+        //no object is required
 		Student_Abstraction.showSchoolName();
 	}
-
 }
-
 
 package learning;
 
