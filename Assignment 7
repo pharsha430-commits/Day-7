@@ -31,6 +31,37 @@ public class Student_Abstraction {
 	}
 }
 
+1. Package declaration- 
+Packages are used to organize classes and avoid name conflicts.
+This line places the class inside the learning package.
+2. Class declaration - 
+Public class means the class can be accessed from anywhere.
+A public class named Student_Abstraction is created.
+3. Static variable -
+Static variables:
+- Belong to the class, not to any object.
+- Are shared by all objects of the class.
+Because it is static, it can be accessed without creating an object.
+schoolName is a static variable.
+4. Static method - 
+Static methods:
+-Can be called without creating an object.
+-Can directly access static variables.
+This method prints the value of the static variable schoolName.
+showSchoolName() is a static method.
+5. Main Method -
+The main() method is the starting point of program execution.
+It is static because Java calls it without creating an object.
+6. Print Statement - 
+Print a message to indicate static variable access.
+7. New Line and Message -
+\n moves the cursor to the next line.
+Prints a message before calling the static method.
+8. Accessing static methoid using class name -
+Static method is called using: - ClassName.methodName()
+No object required.
+
+
 package learning;
 
 abstract class four_wheeler {
